@@ -1,7 +1,6 @@
 # dsa
 Datastructures and algorithms
 
-
 ## Steps
 1. Understand Big O.
 2. Pick a language.
