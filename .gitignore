@@ -1,3 +1,26 @@
 .idea
 build
 target
+
+# C# Config
+
+# Files and directories generated
+bin/
+obj/
+
+# Environment configuration files
+*.env
+
+# Log files
+*.log
+
+# Compilation and execution files
+*.exe
+*.dll
+*.pdb
+
+# Data Bases
+*.db
+*.db-shm
+*.db-wal
+dsa.sln
