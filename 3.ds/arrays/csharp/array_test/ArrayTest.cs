@@ -12,7 +12,7 @@ public class ArrayTest
     {
         int[] data = [1, 2];
 
-        ArrayCustom arrayCustom = new ArrayCustom(data);
+        ArrayCustom arrayCustom = new(data);
 
         Assert.AreEqual(data, arrayCustom.Data);
     }
