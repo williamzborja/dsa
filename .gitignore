@@ -24,3 +24,6 @@ obj/
 *.db-shm
 *.db-wal
 dsa.sln
+
+# mac linux
+.mono

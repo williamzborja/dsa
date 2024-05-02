@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "array_ds", "array_ds\array_ds.csproj", "{8BEEB83B-08F0-458B-B701-A1F3D570E58F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "array_test", "array_test\array_test.csproj", "{2DC3FE6E-C7BC-4F0F-B809-6CDA6B0AD4AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BEEB83B-08F0-458B-B701-A1F3D570E58F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BEEB83B-08F0-458B-B701-A1F3D570E58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BEEB83B-08F0-458B-B701-A1F3D570E58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BEEB83B-08F0-458B-B701-A1F3D570E58F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DC3FE6E-C7BC-4F0F-B809-6CDA6B0AD4AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC3FE6E-C7BC-4F0F-B809-6CDA6B0AD4AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC3FE6E-C7BC-4F0F-B809-6CDA6B0AD4AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC3FE6E-C7BC-4F0F-B809-6CDA6B0AD4AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
