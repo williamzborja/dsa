@@ -6,6 +6,8 @@ In this repo, will be using the following languages:
 1. C#
 2. Python
 3. Kotlin
+4. Java
+5. Rust
 
 ## Steps
 1. Understand Big O.
