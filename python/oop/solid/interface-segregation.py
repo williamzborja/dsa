@@ -1,3 +1,8 @@
+"""
+Interface Segregation:
+    - No se debe obligar a los clientes a depender de interfaces que no utilizan.
+"""
+# pylint: disable=C0115, C0116, C0103, R0903
 from abc import ABC, abstractmethod
 
 class Printer(ABC):

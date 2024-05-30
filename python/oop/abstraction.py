@@ -1,3 +1,4 @@
+# pylint: disable=C0115, C0116
 """
 Abstraccion:
     - Clase abstracta que representa un objeto.
@@ -5,18 +6,32 @@ Abstraccion:
     - Todos los metodos son abstractos.
     - Todo objeto debe heredar de esta clase.
     - Esta clase no se puede instanciar.
+
+Interfaz: Contrato de la clase en el que especifica la abstracción.
+
+    - Es una clase que solo tiene metodos abstractos.
+    - Todos los metodos son abstractos.
+
+Clase Abstracta: Molde principal para las otras clases
+    - No se puede instanciar.
 """
 from abc import ABC, abstractmethod
+class MyClass(): # Clase abstracta
+
+    def add(self, a, b):
+        return a + b
 
 class Figura(ABC):
 
+    @abstractmethod
     def calcular_area(self):
-        print("ABC: Calculate area")
-        return True
+        pass
 
     @abstractmethod
     def calcular_perimetro(self):
         pass
+
+# fig = Figura() # No se puede instanciar
 
 class Rectangulo(Figura):
     """ Doc """
@@ -35,8 +50,8 @@ class Circulo(Figura):
     def __init__(self, radio):
         self.radio = radio
 
-    # def calcular_area(self):
-    #     return 3.14159 * self.radio ** 2
+    def calcular_area(self):
+        return 3.14159 * self.radio ** 2
 
     def calcular_perimetro(self):
         return 2 * 3.14159 * self.radio

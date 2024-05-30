@@ -1,3 +1,10 @@
+# pylint: disable=C0115, C0116, C0103, R0903
+"""
+Liskov Substitution:
+    - Las subclases deben ser sustituibles por sus clases base.
+    - Las subclases no deben romper el contrato de sus clases base.
+    - Las subclases no deben romper el comportamiento esperado de sus clases base.
+"""
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
@@ -20,26 +27,12 @@ class Square(Shape):
     def calculate_area(self):
         return self.side ** 2
 
+# Cualquier objeto tipo Shape debe tener el metodo calculate_area()
 def calculate_area(shape: Shape):
     print(f"Shape: {shape} - Area: {shape.calculate_area()}")
 
 rectangle = Rectangle(1, 2)
 square = Square(1)
 
-calculate_area(rectangle)
-calculate_area(square)
-
-
-
-class Animal(ABC):
-
-    def comer(self):
-        pass
-
-    @abstractmethod
-    def hacer_sonido(self):
-        pass
-
-class Perro(Animal):
-    def hacer_sonido(self):
-        print("¡Guau!")
+print(f"Square Area: {calculate_area(square)}")
+print(f"Rectangle Area: {calculate_area(rectangle)}")
